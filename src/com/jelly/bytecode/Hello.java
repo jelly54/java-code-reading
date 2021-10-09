@@ -1,4 +1,4 @@
-package com.jelly;
+package com.jelly.bytecode;
 
 public class Hello {
     public static void main(String[] args) {

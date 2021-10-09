@@ -1,4 +1,4 @@
-package com.jelly.hsdb;
+package com.jelly.bytecode.hsdb;
 
 public class B extends A {
     @Override

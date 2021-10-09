@@ -1,4 +1,4 @@
-package com.jelly.clazz;
+package com.jelly.bytecode.clazz;
 
 class Father {
 

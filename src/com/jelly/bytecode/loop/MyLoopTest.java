@@ -1,4 +1,4 @@
-package com.jelly.loop;
+package com.jelly.bytecode.loop;
 
 public class MyLoopTest {
     public static int[] numbers = new int[]{1, 2, 3};

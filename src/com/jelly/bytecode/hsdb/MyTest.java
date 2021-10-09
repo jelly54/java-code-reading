@@ -1,4 +1,4 @@
-package com.jelly.hsdb;
+package com.jelly.bytecode.hsdb;
 
 import java.io.IOException;
 

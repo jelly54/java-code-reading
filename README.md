@@ -31,7 +31,7 @@ java-code-reading
 
 ```
 Main class: com.sun.tools.javac.Main
-Program arguments: /Users/xxx/Documents/java-code-reading/src/com/jelly/Hello.java
+Program arguments: /Users/xxx/Documents/java-code-reading/src/com/jelly/bytecode/Hello.java
 ```
 
 配置完成点击运行，会在 `Hello.java` 同级目录生成 `Hello.class` 就成功了
