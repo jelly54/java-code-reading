@@ -4,6 +4,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicStampedReference;
 
 /**
+ * java中解决cas ABA问题的类：AtomicStampedReference
+ * <p>
+ * java中还有哪些类可以解决ABA的问题?
+ * AtomicMarkableReference，它不是维护一个版本号，而是维护一个boolean类型的标记，标记值有修改，了解一下。
+ *
  * @author ：zhangguodong
  * @since ：2021/10/10 15:44
  */
