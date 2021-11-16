@@ -6,44 +6,20 @@ package com.jelly.bytecode.loop;
  */
 public class SwitchTest {
     public static void main(String[] args) {
-        String i = "cc";
-        switch (i) {
-            case "a":
-                System.out.println("case 1");
-                break;
-            case "aa":
-                System.out.println("case 10");
-                break;
-            case "aaa":
-                System.out.println("case 300");
-                break;
-            case "gg":
-                System.out.println("case 100");
-                break;
-            default:
-                System.out.println("case -1");
-                break;
-        }
+        int i = chooseNear(200);
+        System.out.println(i);
     }
 
-//    public void intSwitch() {
-//        int i = 30;
-//        switch (i) {
-//            case 1:
-//                System.out.println("case 1");
-//                break;
-//            case 10:
-//                System.out.println("case 10");
-//                break;
-//            case 300:
-//                System.out.println("case 300");
-//                break;
-//            case 100:
-//                System.out.println("case 100");
-//                break;
-//            default:
-//                System.out.println("case -1");
-//                break;
-//        }
-//    }
+    public static int chooseNear(int i) {
+        switch (i) {
+            case 100:
+                return 0;
+            case 101:
+                return 1;
+            case 104:
+                return 4;
+            default:
+                return -1;
+        }
+    }
 }
