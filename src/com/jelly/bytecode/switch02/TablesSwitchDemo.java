@@ -1,10 +1,10 @@
-package com.jelly.bytecode.loop;
+package com.jelly.bytecode.switch02;
 
 /**
  * @author ：zhang guo dong
- * @date ：Created in 2021/3/29 下午5:08
+ * @since 2021/11/24 15:52
  */
-public class SwitchTest {
+public class TablesSwitchDemo {
     public static void main(String[] args) {
         int i = chooseNear(200);
         System.out.println(i);
