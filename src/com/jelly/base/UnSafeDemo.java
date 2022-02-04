@@ -60,6 +60,13 @@ public class UnSafeDemo {
         try {
             // 调用setMemory方法向每个字节写入内容为byte类型的1
             unsafe.setMemory(null, addr, size, (byte) 1);
+            // 偏移量每动1位，二进制表示 变动8个0；后边 put 的字节数的二进制表示，放在偏移量前边
+            // unsafe.putByte(addr+1, (byte) 1); // 1  00000000
+            // unsafe.putByte(addr+1, (byte) 2); // 10 00000000
+            // unsafe.putByte(addr+1, (byte) 3); // 11 00000000
+            // unsafe.putByte(addr+1, (byte) 4); // 100 00000000
+
+            // unsafe.putByte(addr+2, (byte) 2); // 10 00000000 00000000
             System.out.println(unsafe.getInt(addr));
 
             // 从 addr 向 addr3 + size * i 拷贝4字节内存
