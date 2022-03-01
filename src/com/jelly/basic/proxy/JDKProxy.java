@@ -10,7 +10,7 @@ import java.lang.reflect.Proxy;
  * <p>
  * 为了解决静态代理中，生成大量的代理类造成的冗余；
  * JDK 动态代理只需要实现 InvocationHandler 接口，重写 invoke 方法便可以完成代理的实现，
- * jdk的代理是利用反射生成代理类 ProxyXXX.class 代理类字节码，并生成对象
+ * jdk的代理是利用反射生成代理类 $ProxyXXX.class 代理类字节码，并生成对象
  * jdk动态代理之所以只能代理接口是因为代理类本身已经 extends了Proxy，而java是不允许多重继承的，但是允许实现多个接口
  * 优点：解决了静态代理中冗余的代理实现类问题。
  * 缺点：JDK 动态代理是基于接口设计实现的，如果没有接口，会抛异常。

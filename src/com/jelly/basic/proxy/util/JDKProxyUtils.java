@@ -24,6 +24,6 @@ public class JDKProxyUtils {
     }
 
     public static void main(String[] args) {
-        JDKProxyUtils.generateProxyClassFile(Bus.class, "BusJDKProxy");
+        JDKProxyUtils.generateProxyClassFile(Bus.class, "$Proxy" + "0");
     }
 }
