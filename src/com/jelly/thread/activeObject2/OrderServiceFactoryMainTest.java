@@ -4,6 +4,13 @@ import com.jelly.thread.activeObject.OrderService;
 import com.jelly.thread.future.Future;
 
 /**
+ * 总结：
+ * Active Objects 模式既能够完整地保留接口方法的调用形式，又能让方法的执行异步化，
+ * 这也是其他接口异步调用模式（Future 模式：只提供了任务的异步执行方案，但是无法保留接口原有的调用形式）无法同时做到的。
+ * <p>
+ * Active Objects模式中使用了很多其他设计模式，代理类的生成（代理设计模式 ）、ActiveMessageQueue
+ * ( Guarded Suspension Pattern 以 及 Worker Thread Pattern ）、findOrderDetails 方法（Future 设计模式)
+ *
  * @author : zhangguodong
  * @since : 2022/10/17 15:10
  */
