@@ -24,6 +24,16 @@ public interface FutureService<IN, OUT> {
     Future<OUT> submit(Task<IN, OUT> task, IN in);
 
     /**
+     * 提交需要返回值的任务，其中 Task 接口代替了 Runnable 接口，指定任务完成后的调用方法
+     *
+     * @param task     具有返回值的可运行任务
+     * @param in       入参数
+     * @param callback 任务完成后执行的方法
+     * @return Future<OUT>
+     */
+    Future<OUT> submit(Task<IN, OUT> task, IN in, Callback<OUT> callback);
+
+    /**
      * 使用静态方法创建一个 FutureService 的实现
      *
      * @param <T> T
